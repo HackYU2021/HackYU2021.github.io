@@ -1,9 +1,9 @@
 
-body, html, .HackYU-container{
+body, html, .HackYU-container {
     height: 100%;
 }
 
-#large-image{
+#large-image {
     /* The image used */
     background-image: url("../pictures/sample_img.jpeg");
     /* Add the blur effect */
@@ -22,8 +22,8 @@ body, html, .HackYU-container{
     /*align-items: center;*/
     /*justify-content: center;*/
 }
-#aboutHackYU{
-    background-color: transparent;
+
+#aboutHackYU {
     color: black;
     width: 70%;
     justify-content: center;
@@ -31,11 +31,18 @@ body, html, .HackYU-container{
     top: 50%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%);
     text-align: center;
     font-size: large;
-    perspective: 1000px;
+    transform: translate(-50%, -50%);
 
+}
+
+.guest, #aboutHackYU, .sponsor {
+    background-color: transparent;
+    perspective: 1000px;
+}
+.guest, .sponsor{
+    height: fit-content;
 }
 .flip-card-inner {
     position: relative;
@@ -45,8 +52,16 @@ body, html, .HackYU-container{
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
+
 /* Do an horizontal flip when you move the mouse over the flip box container */
 #aboutHackYU:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.guest:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.sponsor:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -65,33 +80,47 @@ body, html, .HackYU-container{
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: white;
+    background-color: #f1f6f9;
     color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-    background-color: white;
+    background-color: #f1f6f9;
     color: black;
     transform: rotateY(180deg);
 }
-.main-body, #guests, #sponsors{
-
+.main-body, #guests, #sponsors {
     display: flex;
     justify-items: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
     align-content: space-around;
     justify-content: space-between;
 }
+#guests, #sponsors{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
 .main-body > * {
     flex-basis: 100%;
 }
-.main-body{
-    margin: 5% 10% 5% 10%;
+
+.main-body {
+    padding: 5% 10% 5% 10%;
+    background-color: #f1f6f9;
+}
+
+.picture-sized{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+h1{
+    text-align: center;
+    font-size: large;
 }
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/

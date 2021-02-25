@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body, html, .HackYU-container {
     height: 100%;
 }
@@ -18,6 +18,7 @@ body, html, .HackYU-container {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    font-family: 'Indie Flower', cursive;
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: center;*/
@@ -32,7 +33,8 @@ body, html, .HackYU-container {
     left: 50%;
     position: absolute;
     text-align: center;
-    font-size: large;
+    font-size: xx-large;
+    font-family: 'Indie Flower', cursive;
     transform: translate(-50%, -50%);
 
 }
@@ -89,6 +91,8 @@ body, html, .HackYU-container {
     background-color: #f1f6f9;
     color: black;
     transform: rotateY(180deg);
+    font-size: x-large;
+    font-family: 'Indie Flower', cursive;
 }
 .main-body, #guests, #sponsors {
     display: flex;
@@ -120,7 +124,8 @@ body, html, .HackYU-container {
 }
 h1{
     text-align: center;
-    font-size: large;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
 }
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/

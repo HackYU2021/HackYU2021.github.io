@@ -25,9 +25,9 @@ body, html, .HackYU-container{
 #aboutHackYU{
     background-color: transparent;
     color: black;
-    width: 25%;
+    width: 70%;
     justify-content: center;
-    height: 100px;
+    height: 200px;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -44,7 +44,6 @@ body, html, .HackYU-container{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    background-color: white;
 }
 /* Do an horizontal flip when you move the mouse over the flip box container */
 #aboutHackYU:hover .flip-card-inner {
@@ -75,6 +74,24 @@ body, html, .HackYU-container{
     background-color: white;
     color: black;
     transform: rotateY(180deg);
+}
+.main-body, #guests, #sponsors{
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    align-content: space-around;
+    justify-content: space-between;
+}
+.main-body > * {
+    flex-basis: 100%;
+}
+.main-body{
+    margin: 5% 10% 5% 10%;
 }
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/

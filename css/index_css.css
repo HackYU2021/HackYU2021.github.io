@@ -1,0 +1,21 @@
+#contact {
+    background: grey;
+    height: 20px;
+}
+
+#copyright {
+    background: darkgrey;
+    height: 20px;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#footer-text {
+    display: inline;
+}
+
+#contact {
+    text-align: center;
+}

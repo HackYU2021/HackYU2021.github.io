@@ -2,15 +2,25 @@
 body, html {
     height: 100%;
 }
-
+html{
+    background-color: rgba(68, 79, 165, 0.8);
+}
 body {
     font-family: 'Indie Flower', cursive;
     margin: 0 10% 0 10%;
+    padding: 0 20px 0 20px;
     background-color: #f1f6f9;
 }
 h1{
     font-size: xx-large;
     text-align: center;
+    color: #FE612C;
+}
+.email{
+    /*color: #444FA5;*/
+    color: rgba(68, 79, 165, 0.9);
+    text-underline: rgba(68, 79, 165, 0.9);
+    text-decoration: underline;
 }
 .intro{
     text-align: center;

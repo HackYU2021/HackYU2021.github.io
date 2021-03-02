@@ -52,6 +52,7 @@ body, html, .HackYU-container {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    display: flex;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -70,28 +71,22 @@ body, html, .HackYU-container {
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
-    height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-    background-color: #f1f6f9;
-    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+    min-width: 100%;
+    height: fit-content;
+    min-height: 100%;
 }
 
 /* Style the back side */
 .flip-card-back {
-    background-color: #f1f6f9;
-    color: black;
     transform: rotateY(180deg);
-    font-size: x-large;
-    font-family: 'Indie Flower', cursive;
 }
 .main-body, #guests, #sponsors {
     display: flex;
@@ -99,7 +94,7 @@ body, html, .HackYU-container {
     align-items: center;
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #guests, #sponsors{
     margin-left: 10%;
@@ -126,18 +121,21 @@ h1{
     font-family: 'Indie Flower', cursive;
     font-size: x-large;
     /*margin: 0;*/
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    /*border-bottom-left-radius: 25px;*/
+    /*border-bottom-right-radius: 25px;*/
     margin: 5px 30% 5px 30%;
-    /*border-radius: 25px;*/
-    border-width: thin;
+    border-radius: 25px;
+    border-width: medium;
     border-style: solid;
-    border-color: #f11d28;
+    border-color: rgba(241, 29, 40, 1);
+    background-color: rgba(253, 58, 45, 0.8);
+    color: #f1f6f9;
 }
 
 .flip-card-inner > *{
     color: #F11D28;
     background-color: rgba(241, 246, 249, 0.85);
+    border-radius: 25px;
 }
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/

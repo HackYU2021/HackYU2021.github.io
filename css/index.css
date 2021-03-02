@@ -5,10 +5,10 @@ body, html, .HackYU-container {
 
 #large-image {
     /* The image used */
-    background-image: url("../pictures/sample_img.jpeg");
+    background-image: url("../pictures/YU_picture.jpg");
     /* Add the blur effect */
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
 
     /* Full height */
     height: 100%;
@@ -127,8 +127,10 @@ h1{
     border-radius: 25px;
     border-width: medium;
     border-style: solid;
-    border-color: rgba(241, 29, 40, 1);
-    background-color: rgba(253, 58, 45, 0.8);
+    /*border-color: rgba(241, 29, 40, 1);*/
+    /*background-color: rgba(253, 58, 45, 0.8);*/
+    border-color: #f11d28;
+    background-color: #f34a52;
     color: #f1f6f9;
 }
 
@@ -136,6 +138,33 @@ h1{
     color: #F11D28;
     background-color: rgba(241, 246, 249, 0.85);
     border-radius: 25px;
+}
+
+.signup{
+    position: absolute;
+
+    text-align: center;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: rgba(241, 29, 40, 0.8);
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+}
+.signup:hover{
+    color: #F11D28;
+    background-color: rgba(241, 246, 249, 0.85);
+}
+
+.YU-signup{
+    top: 25%;
+    left: 20%;
+}
+
+.nonYU-signup{
+    bottom: 25%;
+    right: 20%;
 }
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/

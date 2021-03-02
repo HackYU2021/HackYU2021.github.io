@@ -3,7 +3,7 @@ body, html {
     height: 100%;
 }
 html{
-    background-color: rgba(68, 79, 165, 0.8);
+    /*background-color: rgba(68, 79, 165, 0.8);*/
 }
 body {
     font-family: 'Indie Flower', cursive;
@@ -15,6 +15,7 @@ h1{
     font-size: xx-large;
     text-align: center;
     color: #FE612C;
+    margin-top: 10px;
 }
 .email{
     /*color: #444FA5;*/
@@ -24,7 +25,7 @@ h1{
 }
 .intro{
     text-align: center;
-    font-size: larger;
+    font-size: medium;
 }
 .dot {
     /* The checkbox which normally displays to be ticked */
@@ -65,17 +66,23 @@ input:checked+label+.slider {
 }
 
 .question{
-    border-bottom: 1px dotted #9893a3;
+    border-bottom: 1px dotted ;
+    border-bottom-color: rgba(254, 97, 44, 0.8);
 }
 p{
     margin: 0;
 }
 label{
-    margin: 0;
+    margin: 0 15px 0 15px;
 }
 .question{
     margin: 0 0 10px 0;
 }
 .main-container{
-    margin: 10px 0 10px 0;
+    margin: 15px 0 15px 0;
+    font-size: large;
+}
+
+span{
+    color: #FE612C;
 }

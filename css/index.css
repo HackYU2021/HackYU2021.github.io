@@ -171,6 +171,10 @@ h1{
     object-fit: contain;
     background-color: white;
 }
+#guests{
+    /*TODO: remove when added guests*/
+    display: none;
+}
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/
 /*}*/

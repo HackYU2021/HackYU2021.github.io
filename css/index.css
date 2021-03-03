@@ -166,6 +166,11 @@ h1{
     bottom: 25%;
     right: 20%;
 }
+
+.sponsor-img{
+    object-fit: contain;
+    background-color: white;
+}
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/
 /*}*/

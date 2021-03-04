@@ -140,6 +140,10 @@ h1{
     border-radius: 25px;
 }
 
+/*.flip-card-front:hover{*/
+/*    color: rgba(241, 246, 249, 1);*/
+/*    background-color: rgba(241, 29, 40, 0.85);*/
+/*}*/
 .signup{
     position: absolute;
 

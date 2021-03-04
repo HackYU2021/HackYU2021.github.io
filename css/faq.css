@@ -80,7 +80,8 @@ label{
 }
 .main-container{
     margin: 15px 0 15px 0;
-    font-size: large;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 span{

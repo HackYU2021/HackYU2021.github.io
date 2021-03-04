@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body, html, .HackYU-container {
+    height: 100%;
+}
+
+#large-image {
+    /* The image used */
+    background-image: url("../pictures/YU_picture.jpg");
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+#aboutHackYU {
+    color: black;
+    width: 70%;
+    justify-content: center;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Indie Flower', cursive;
+    transform: translate(-50%, -50%);
+
+}
+
+.guest, #aboutHackYU, .sponsor {
+    background-color: transparent;
+    perspective: 1000px;
+}
+.guest, .sponsor{
+    height: fit-content;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#aboutHackYU:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.guest:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.sponsor:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+    min-width: 100%;
+    height: fit-content;
+    min-height: 100%;
+}
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+.main-body, #guests, #sponsors {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+#guests, #sponsors{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.main-body > * {
+    flex-basis: 100%;
+}
+
+.main-body {
+    padding: 5% 10% 5% 10%;
+    background-color: #f1f6f9;
+}
+
+.picture-sized{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+    /*margin: 0;*/
+    /*border-bottom-left-radius: 25px;*/
+    /*border-bottom-right-radius: 25px;*/
+    margin: 5px 30% 5px 30%;
+    border-radius: 25px;
+    border-width: medium;
+    border-style: solid;
+    /*border-color: rgba(241, 29, 40, 1);*/
+    /*background-color: rgba(253, 58, 45, 0.8);*/
+    border-color: #f11d28;
+    background-color: #f34a52;
+    color: #f1f6f9;
+}
+
+.flip-card-inner > *{
+    color: #F11D28;
+    background-color: rgba(241, 246, 249, 0.85);
+    border-radius: 25px;
+}
+
+.signup{
+    position: absolute;
+
+    text-align: center;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: rgba(241, 29, 40, 0.8);
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+}
+.signup:hover{
+    color: #F11D28;
+    background-color: rgba(241, 246, 249, 0.85);
+}
+
+.YU-signup{
+    top: 25%;
+    left: 20%;
+}
+
+.nonYU-signup{
+    bottom: 25%;
+    right: 20%;
+}
+
+.sponsor-img{
+    object-fit: contain;
+    background-color: white;
+}
+#guests{
+    /*TODO: remove when added guests*/
+    display: none;
+}
+/*#picture-1{*/
+/*    background-image:url('../pictures/sample_img_3.jpeg')*/
+/*}*/
+
+/*#picture-2{*/
+/*    background-image:url('../pictures/sample_img_4.jpeg')*/
+/*}*/
+
+/*#picture-3{*/
+/*    background-image:url('../pic

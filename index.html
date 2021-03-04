@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
     <title>HackYU2021</title>
 </head>
 <body>
@@ -25,35 +27,121 @@
         <a href="signup_general.html">General Sign-Up!</a>
     </div>
 </header>
-<h1> HackYU2021 page! </h1>
-<div id="aboutHackYU">
-    <p>
-        WIP:
-        HackYu is the 6th annual official Yeshiva University Hackathon.
-        <!-- TODO: add more text when finished -->
-    </p>
-</div>
-<div id="guests">
-    <div class="guest">
-        <img src="https://via.placeholder.com/150"  alt="FirstName LastName"/>
-        <!-- TODO: maybe on click we can send to some page with more details about them? -->
-        <p>VERY IMPORTANT PERSON'S INFO</p>
+<div class="HackYU-container">
+    <div id="large-image">
     </div>
+<!--    <div>-->
+        <a class="YU-signup signup" href="signup_YU.html">
+           <b> YU Sudent? <br/>
+            Sign up here</b></a>
+<!--    </div>-->
+    <div id="aboutHackYU">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                What is HackYU2021?
+            </div>
+            <div class="flip-card-back">
+                <p>
+                HackYU 2021 is the 6th annual official Yeshiva University hackathon.
+                <br>
+                It is a place for students to spend 24 hours dedicated to coding.
+                <br>
+                This is an opportunity to showcase creativity and build something from the ground up.
+                    <!-- TODO: add more text when finished --></p>
+            </div>
+        </div>
+    </div>
+<!--    <div>-->
+        <a class="nonYU-signup signup" href="signup_general.html">
+            <b> Non-YU student? <br/>
+                Sign up here</b></a>
+<!--    </div>-->
+</div>
+<div class="main-body">
+    <hr/>
 
-</div>
-<div id="sponsors">
-    <img src="https://via.placeholder.com/150"  alt="Sponsor1"/>
-    <img src="https://via.placeholder.com/150"  alt="Sponsor2"/>
-    <img src="https://via.placeholder.com/150"  alt="Sponsor3"/>
-</div>
+    <div id="guests">
+        <h1>Our Guests</h1>
+        <div class="guest">
+            <div class="flip-card-inner picture-sized">
+                <!--                -->
+                <img src="./pictures/sample_guest_1.jpeg"
+                     alt="FirstName LastName" class="flip-card-front picture-sized"/>
+                <!--                         -->
 
-<footer>
-    <div id="contact">
-        <a id="email" href="mailto: hackyu2021@gmail.com"><i class="envelope icon"></i></a>
+                <!-- TODO: maybe on click we can send to some page with more details about them? -->
+                <div
+                        class="flip-card-back picture-sized"> Guest1
+                </div>
+            </div>
+
+        </div>
+        <div class="guest">
+            <div class="flip-card-inner picture-sized">
+                <!--                -->
+                <img src="./pictures/sample_guest_2.jpeg"
+                     alt="FirstName LastName" class="flip-card-front picture-sized"/>
+                <!--                         -->
+
+                <!-- TODO: maybe on click we can send to some page with more details about them? -->
+                <div
+                        class="flip-card-back picture-sized"> Guest2
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div>
-        &copy;HackYU2021
+    <h1>Our Sponsors</h1>
+    <div id="sponsors">
+        <div class="sponsor">
+            <div class="flip-card-inner picture-sized">
+                <!--                -->
+                <img src="./pictures/SSCWSC_logo.png"
+                     alt="FirstName LastName" class="flip-card-front picture-sized sponsor-img"/>
+                <!--                         -->
+
+                <!-- TODO: maybe on click we can send to some page with more details about them? -->
+                <div
+                        class="flip-card-back picture-sized"> Stern College for Women Student Council
+                </div>
+            </div>
+        </div>
+        <div class="sponsor">
+            <div class="flip-card-inner picture-sized">
+                <!--                -->
+                <img src="./pictures/YSU_Logo.png"
+                     alt="FirstName LastName" class="flip-card-front picture-sized sponsor-img"/>
+                <!--                         -->
+
+                <!-- TODO: maybe on click we can send to some page with more details about them? -->
+                <div
+                        class="flip-card-back picture-sized"> Yeshiva Student Union
+                </div>
+            </div>
+        </div>
+        <div class="sponsor">
+            <div class="flip-card-inner picture-sized">
+                <!--                -->
+                <img src="./pictures/YCSA_Logo.jpg"
+                     alt="FirstName LastName" class="flip-card-front picture-sized sponsor-img"/>
+                <!--                         -->
+
+                <!-- TODO: maybe on click we can send to some page with more details about them? -->
+                <div
+                        class="flip-card-back picture-sized"> Yeshiva College Student Association
+                </div>
+            </div>
+
+        </div>
     </div>
-</footer>
+</div>
+    <footer>
+        <div id="contact">
+            <a id="email" href="mailto: hackyu2021@gmail.com"><i class="envelope icon"></i></a>
+        </div>
+        <div>
+            &copy;HackYU2021
+        </div>
+    </footer>
 </body>
 </html>

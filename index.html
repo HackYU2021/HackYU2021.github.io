@@ -1,4 +1,5 @@
 <!doctype html>
+<!--suppress JSUnresolvedLibraryURL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,27 +8,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header-footer.css">
     <title>HackYU2021</title>
 </head>
 <body>
 <header>
-    <div class="topnav">
+
+    <div class="header-top">
+        <a href="index.html"><img src="pictures/yu_logo.png" alt="YU Shield"></a>
+        <p id="header-middle">YU's 6th Ever Hackathon</p>
+        <div id="date-box">
+            <p>May 1st - 2nd</p>
+            <p>Koch Auditorium</p>
+            <p>Stern College</p>
+        </div>
+    </div>
+
+    <div class="navbar">
         <div class="subnav">
             <a class="active" href="index.html">Home</a>
             <div class="subnav-content">
                 <a href="#aboutHackYU">About HackYU</a>
-                <a href="#guests">Guests</a>
+                <a id="dropdown-guests" href="#guests">Guests</a>
                 <a href="#sponsors">Sponsors</a>
                 <a href="#contact">Contact Info</a>
             </div>
         </div>
-        <a href="schedule.html">Schedule</a>
-        <a href="faq.html">FAQ</a>
-        <a href="signup_YU.html">YU Student Sign-Up!</a>
-        <a href="signup_general.html">General Sign-Up!</a>
+        <a id="schedule-link" class="nav-link" href="schedule.html">Schedule</a>
+        <a id="faq-link" class="nav-link" href="faq.html">FAQ</a>
+        <a id="yu-signup-link" class="nav-link" href="signup_YU.html">YU Student Sign-Up</a>
+        <a id="general-signup-link" class="nav-link" href="signup_general.html">General Sign-Up</a>
     </div>
+
 </header>
 <div class="HackYU-container">
+    <!--TODO: resize image so top isn't cut off-->
     <div id="large-image">
     </div>
 <!--    <div>-->
@@ -135,13 +150,18 @@
         </div>
     </div>
 </div>
-    <footer>
-        <div id="contact">
-            <a id="email" href="mailto: hackyu2021@gmail.com"><i class="envelope icon"></i></a>
-        </div>
-        <div>
-            &copy;HackYU2021
-        </div>
-    </footer>
+
+<footer>
+    <div id="contact">
+        <!--TODO: change text when adding social media icons-->
+        <p id="footer-text">Feel free to email us with any questions:&nbsp;</p>
+        <a id="email" href="mailto: hackyu2021@gmail.com"><i class="envelope icon"></i></a>
+        <a id="facebook" href="https://www.facebook.com"><i class="facebook icon"></i></a>
+        <a id="instagram" href="https://www.instagram.com"><i class="instagram icon"></i></a>
+    </div>
+    <div id="copyright">
+        ©HackYU2021
+    </div>
+</footer>
 </body>
 </html>

@@ -5,10 +5,21 @@ body, html{
 
 body{
     font-family: 'Indie Flower', cursive;
-    margin: 0 10% 0 10%;
+    /*margin: 0 10% 0 10%;*/
     background-color: #f1f6f9;
     text-align: center;
 }
+
+h1 {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 1px;
+}
+
+.free-text {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
 .YU{
     color: #FF872C;
 }

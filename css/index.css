@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-body, html, .HackYU-container {
+body, html {
     height: 100%;
+    margin: 0;
+}
+
+.HackYU-container {
+    position: relative;
+    /*top: 186px;*/
+    height: 72%;
 }
 
 #large-image {
@@ -163,12 +170,13 @@ h1{
 }
 
 .YU-signup{
-    top: 25%;
+    /*top: 25%;*/
+    top: 15.5%;
     left: 20%;
 }
 
 .nonYU-signup{
-    bottom: 25%;
+    bottom: 15.5%;
     right: 20%;
 }
 

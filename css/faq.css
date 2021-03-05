@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body, html {
+    height: 100%;
+}
+html{
+    /*background-color: rgba(68, 79, 165, 0.8);*/
+}
+body {
+    font-family: 'Indie Flower', cursive;
+    margin: 0 10% 0 10%;
+    padding: 0 20px 0 20px;
+    background-color: #f1f6f9;
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+    color: #FE612C;
+    margin-top: 10px;
+}
+.email{
+    /*color: #444FA5;*/
+    color: rgba(68, 79, 165, 0.9);
+    text-underline: rgba(68, 79, 165, 0.9);
+    text-decoration: underline;
+}
+.intro{
+    text-align: center;
+    font-size: medium;
+}
+.dot {
+    /* The checkbox which normally displays to be ticked */
+    display: none;
+    /* Ensures the tickbox is not displayed */
+}
+
+label {
+    /* The combined element: the input.faq is the checkbox combined with the label.faq_label creates a clickable line of text */
+    padding: 0.1875em 0.1875em 0.1875em 0.1875em;
+    /* Padding around the label */
+    /*display: block !important;*/
+    /* Displayed this combined element as a block */
+    cursor: pointer !important;
+    /* When the cursor hovers over this combined element display as a pointer to show it is clickable */
+    /*border-bottom: 1px dotted #9893a3;*/
+    /* Border underneath label */
+}
+
+.slider {
+    /* The combined element of the input + the label + the slider = text section which is currently hidden */
+    overflow: hidden;
+    /* text which runs outside of the given space is hidden */
+    max-height: 0;
+    /* Max-height */
+    margin-left: 10%;
+}
+
+input:checked+label {}
+
+/* The combined element: input.faq & label.faq_label when they have been 'checked' i.e. clicked */
+
+input:checked+label+.slider {
+    overflow: hidden;
+    max-height: 500px;
+    /* approximate max height */
+    padding: 4px 0px 0px 0px;
+}
+
+.question{
+    border-bottom: 1px dotted ;
+    border-bottom-color: rgba(254, 97, 44, 0.8);
+}
+p{
+    margin: 0;
+}
+label{
+    margin: 0 15px 0 15px;
+}
+.question{
+    margin: 0 0 10px 0;
+}
+.main-container{
+    margin: 15px 0 15px 0;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+span{
+    color: #FE612C;
+}

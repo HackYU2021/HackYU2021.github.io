@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body, html, .HackYU-container {
+    height: 100%;
+}
+body {
+    font-family: 'Indie Flower', cursive;
+    margin: 0 10% 0 10%;
+    padding: 0 20px 0 20px;
+    background-color: #f1f6f9;
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+    color: #FD3A2D;
+    margin-top: 10px;
+}
+#nothing-here{
+    text-align: center;
+    font-size: large;
+}
+table{
+    /*TODO: remove when added schedule */
+    display: none;
+}

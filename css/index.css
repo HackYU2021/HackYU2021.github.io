@@ -7,30 +7,38 @@ body, html {
 
 .HackYU-container {
     position: relative;
-    /*top: 186px;*/
     height: 72%;
+    overflow: auto;
+    flex-direction: column;
 }
+.HackYU-container::before{
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
 
-#large-image {
-    /* The image used */
+    display: flex;
     background-image: url("../pictures/YU_picture.jpg");
-    /* Add the blur effect */
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-
-    /* Full height */
+    background-size:cover;
+    width: 100%;
     height: 100%;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
 }
-
+input {
+    display: none;
+}
+label{
+    height: 100%;
+    width: 100%;
+}
+.HackYU-container > * {
+    flex: 1;
+}
 #aboutHackYU {
     color: black;
     width: 70%;
@@ -43,6 +51,7 @@ body, html {
     font-size: xx-large;
     font-family: 'Indie Flower', cursive;
     transform: translate(-50%, -50%);
+    align-content: space-around;
 
 }
 
@@ -62,10 +71,15 @@ body, html {
     transform-style: preserve-3d;
     display: flex;
 }
+#flip-card-inner:checked + label .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-#aboutHackYU:hover .flip-card-inner {
-    transform: rotateY(180deg);
+#aboutHackYU:hover .flip-card-inner > *{
+    background-color: rgba(241, 29, 40, 0.7);
+    color: rgba(241, 246, 249, 1);
 }
 .guest:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -146,6 +160,8 @@ h1{
     color: #F11D28;
     background-color: rgba(241, 246, 249, 0.85);
     border-radius: 25px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
 }
 
 /*.flip-card-front:hover{*/

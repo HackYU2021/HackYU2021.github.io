@@ -77,9 +77,10 @@ label{
 
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-#aboutHackYU:hover .flip-card-inner > *{
-    background-color: rgba(241, 29, 40, 0.7);
-    color: rgba(241, 246, 249, 1);
+label:hover .flip-card-front{
+    -webkit-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+    box-shadow: 20px 0 20px 0 rgba(50,50,50,.2);
 }
 .guest:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -187,7 +188,7 @@ h1{
 
 .YU-signup{
     /*top: 25%;*/
-    top: 14%;
+    bottom: 14%;
     left: 20%;
 }
 
@@ -203,6 +204,10 @@ h1{
 #guests{
     /*TODO: remove when added guests*/
     display: none;
+}
+.flip-card-front{
+    font-size: 150%;
+    font-weight: bolder;
 }
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/

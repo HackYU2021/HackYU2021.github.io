@@ -8,7 +8,7 @@ body, html {
 .HackYU-container {
     position: relative;
     height: 72%;
-    overflow: auto;
+    overflow: hidden;
     flex-direction: column;
 }
 .HackYU-container::before{
@@ -17,7 +17,9 @@ body, html {
     right: 0;
     z-index: -1;
 
-    display: flex;
+    display: table;
+    flex-direction: column;
+    overflow: hidden;
     background-image: url("../pictures/YU_picture.jpg");
     background-size:cover;
     width: 100%;
@@ -172,9 +174,7 @@ h1{
 /*}*/
 .signup{
     position: absolute;
-
     text-align: center;
-    height: fit-content;
     border-radius: 10px;
     padding: 13px;
     background-color: rgba(241, 29, 40, 0.8);
@@ -182,6 +182,12 @@ h1{
     font-family: 'Ubuntu', sans-serif;
     font-size: large;
     width: 15%;
+    bottom: 12%;
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .signup:hover{
     color: #F11D28;
@@ -189,13 +195,10 @@ h1{
 }
 
 .YU-signup{
-    /*top: 25%;*/
-    bottom: 14%;
     left: 25%;
 }
 
 .nonYU-signup{
-    bottom: 14%;
     right: 25%;
 }
 
@@ -227,13 +230,14 @@ h1{
     color: #F11D28;
     opacity: 0.75;
 }
-/*#picture-1{*/
-/*    background-image:url('../pictures/sample_img_3.jpeg')*/
-/*}*/
 
-/*#picture-2{*/
-/*    background-image:url('../pictures/sample_img_4.jpeg')*/
-/*}*/
+.signups:after{
 
-/*#picture-3{*/
-/*    background-image:url('../pic
+    bottom: 14%;
+    display:table-row;
+    overflow: hidden;
+    content: " ";
+    clear: both;
+
+}
+

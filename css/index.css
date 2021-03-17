@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body, html {
     height: 100%;
@@ -49,7 +49,7 @@ label{
     position: absolute;
     text-align: center;
     font-size: xx-large;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Ubuntu', sans-serif;
     transform: translate(-50%, -50%);
     align-content: space-around;
 
@@ -81,6 +81,7 @@ label:hover .flip-card-front{
     -webkit-transform: rotateY(10deg);
     transform: rotateY(10deg);
     box-shadow: 20px 0 20px 0 rgba(50,50,50,.2);
+    cursor: pointer;
 }
 .guest:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -100,7 +101,7 @@ label:hover .flip-card-front{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-size: x-large;
     min-width: 100%;
     height: fit-content;
@@ -119,7 +120,7 @@ label:hover .flip-card-front{
     align-content: space-around;
     justify-content: space-around;
 }
-#guests, #sponsors{
+#guests, #sponsors, .jumbotron{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
@@ -141,12 +142,12 @@ label:hover .flip-card-front{
 }
 h1{
     text-align: center;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-size: x-large;
     /*margin: 0;*/
     /*border-bottom-left-radius: 25px;*/
     /*border-bottom-right-radius: 25px;*/
-    margin: 5px 30% 5px 30%;
+    margin: 10px 30% 10px 30%;
     border-radius: 25px;
     border-width: medium;
     border-style: solid;
@@ -178,8 +179,9 @@ h1{
     padding: 13px;
     background-color: rgba(241, 29, 40, 0.8);
     color: white;
-    font-family: 'Indie Flower', cursive;
-    font-size: x-large;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    width: 15%;
 }
 .signup:hover{
     color: #F11D28;
@@ -189,12 +191,12 @@ h1{
 .YU-signup{
     /*top: 25%;*/
     bottom: 14%;
-    left: 20%;
+    left: 25%;
 }
 
 .nonYU-signup{
     bottom: 14%;
-    right: 20%;
+    right: 25%;
 }
 
 .sponsor-img{
@@ -208,6 +210,22 @@ h1{
 .flip-card-front{
     font-size: 150%;
     font-weight: bolder;
+}
+.jumbotron{
+    text-align: justify;
+    font-size: large;
+    color:dimgray;
+    /*background-color: #3E474C;*/
+}
+.jumbo-br{
+    line-height: 150%;
+}
+.rules, .rules > * {
+    margin: 0 0 0.4em;
+}
+.highlight, .rules{
+    color: #F11D28;
+    opacity: 0.75;
 }
 /*#picture-1{*/
 /*    background-image:url('../pictures/sample_img_3.jpeg')*/

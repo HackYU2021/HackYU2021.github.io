@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body, html{
     height: 100%;
 }
 
 body{
-    font-family: 'Indie Flower', cursive;
     /*margin: 0 10% 0 10%;*/
     background-color: #f1f6f9;
     text-align: center;
 }
-
-h1 {
-    font-family: "Indie Flower", cursive;
+body > *{
+    font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
 }
 
 .free-text {
-    letter-spacing: 1px;
     font-weight: bold;
 }
 

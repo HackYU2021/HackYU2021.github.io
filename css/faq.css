@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body, html {
     height: 100%;
     letter-spacing: 1px;
@@ -7,19 +7,21 @@ html{
     /*background-color: rgba(68, 79, 165, 0.8);*/
 }
 body {
-    font-family: 'Indie Flower', cursive;
+    /*font-family: 'Ubuntu', sans-serif;*/
     /*margin: 0 10% 0 10%;*/
     margin: 0;
     /*padding: 0 20px 0 20px;*/
     padding: 0;
     background-color: #f1f6f9;
 }
+body > *{
+    font-family: 'Ubuntu', sans-serif;
+}
 h1{
     font-size: xx-large;
     text-align: center;
     color: #FE612C;
     margin-top: 10px;
-    font-family: "Indie Flower", cursive;
     letter-spacing: 3px;
 }
 
@@ -37,6 +39,9 @@ h1{
     color: rgba(68, 79, 165, 0.9);
     text-underline: rgba(68, 79, 165, 0.9);
     text-decoration: underline;
+}
+.link{
+    color: rgba(68, 79, 165, 0.9);
 }
 .intro{
     text-align: center;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -11,37 +11,44 @@
     justify-content: space-between;
 
     width: 100%;
-    height: 150px;
+    height: 155px;
 
-    /*background-color: rgb(105, 114, 183);*/
     background-color: white;
-    font-family: "Indie Flower", cursive;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.header-top img {
-    /*fit the logo at top left*/
-    margin-left: 30px;
-    margin-top: 13px;
-    width: 170px;
-    height: 120px;
+#YU-logo {
+    padding: 0;
+    margin: 0;
+    width: 163px;
+    height: 116px;
 }
 
-#header-middle {
-    position: relative;
+.header-top .logo-link {
+    /*height: 116px;*/
+    /*width: 160px;*/
+    height: auto;
+    width: auto;
+}
 
-    font-size: 45px;
-    letter-spacing: 3px;
-    color: rgb(255, 161, 44);
-    /*text-shadow: black 2px 2px;*/
+.header-box {
+    width: 163px;
+    height: 150px;
+}
 
-    top: 26%;
-    white-space: nowrap;
+.header-top #YU-logo {
+    height: auto;
+    padding: 15px;
 }
 
 .header-middle {
-    position: absolute;
-    left: 400px;
+    /*position: absolute;*/
+    /*position: relative;*/
+    /*left: 365px;*/
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -49,10 +56,16 @@
 .header-middle p {
     margin: 0;
     padding: 0;
-    text-align: center;
-    color: #FFA12C;
-    letter-spacing: 3px;
+    color: #fdab24;
+    /*letter-spacing: 1px;*/
+    position: relative;
     font-weight: bold;
+}
+
+.header-middle #HackYU-logo {
+    height: 84px;
+    width: 143px;
+    margin-top: 7px;
 }
 
 #mid-bot {
@@ -60,43 +73,29 @@
 }
 
 .mid-small {
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.mid-big {
-    font-size: 50px;
+#mid-top {
+    color: rgb(105, 114, 183);
 }
 
-.header-top #date-box {
-    position: relative;
-
-    right: 30px;
-    height: 130px;
-    width: 260px;
-
-    text-align: center;
-    font-weight: bold;
-
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 8px;
-
-    border-style: solid;
-    border-width: 14px;
-    border-radius: 25px;
-    border-color: rgb(241, 29, 40);
-
-    background-color: rgb(243, 74, 82);
-    color: rgb(241, 246, 249);
-
-    white-space: nowrap;
+.logo-box {
+    height: 200px;
+    width: 150px;
 }
 
-.header-top #date-box p {
-    letter-spacing: 3px;
-    font-size: 23px;
+#top-right-box {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
 
-    margin: 0;
+#top-right-box img {
+    margin-top: 3px;
+    float: right;
+    margin-right: 23px;
 }
 
 .navbar {
@@ -111,7 +110,6 @@
     width: 100%;
     height: 34px;
 
-    /*background-color: rgb(145, 160, 170);*/
     background-color: rgb(105, 114, 183);
 
     white-space: nowrap;
@@ -123,13 +121,15 @@
     padding-left: 0;
     padding-right: 0;
 
-    font-family: "Indie Flower", cursive;
+    /*font-family: "Indie Flower", cursive;*/
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 3px;
     /*text-shadow: black 1px 1px;*/
     /*color: rgb(241, 29, 40);*/
-    color: #FFA12C;
+    /*color: #FFA12C;*/
+    color: white;
 }
 
 #dropdown-guests {
@@ -137,37 +137,15 @@
     display: none;
 }
 
-#home-link {
-    /*color: rgb(241, 29, 40);*/
-}
-
-#schedule-link {
-    /*color: #fd3a2d;*/
-}
-
-#faq-link {
-    /*color: #fe612c;*/
-}
-
-#yu-signup-link {
-    /*color: #ff872c;*/
-}
-
-#general-signup-link {
-    /*color: #ffa12c;*/
-}
-
 /*start dropdown menu styling*/
 
 .active {
     /*styling for home link on home-page dropdown menu*/
-    /*color: rgb(241, 29, 40);*/
-    color: #FFA12C;
-    font-family: "Indie Flower", cursive;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
-    /*text-shadow: black 1px 1px;*/
 
     padding-left: 10px;
 }
@@ -200,7 +178,7 @@
     color: #f11d28;
     text-shadow: #3a4044 1px 1px;
     text-decoration: none;
-    font-family: "Indie Flower", cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -252,7 +230,7 @@ footer {
     width: 100%;
     text-align: center;
 
-    font-family: "Indie Flower", cursive;
+    font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
     color: rgb(241, 246, 249);
 
@@ -269,7 +247,7 @@ footer {
     background-color: rgb(241, 29, 40);
 
     color: rgb(241, 246, 249);
-    font-family: "Indie Flower", cursive;
+    font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
 
     text-align: center;

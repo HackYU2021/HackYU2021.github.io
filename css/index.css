@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body, html {
     height: 100%;
@@ -7,30 +7,40 @@ body, html {
 
 .HackYU-container {
     position: relative;
-    /*top: 186px;*/
     height: 72%;
+    overflow: hidden;
+    flex-direction: column;
 }
+.HackYU-container::before{
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
 
-#large-image {
-    /* The image used */
+    display: table;
+    flex-direction: column;
+    overflow: hidden;
     background-image: url("../pictures/YU_picture.jpg");
-    /* Add the blur effect */
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-
-    /* Full height */
+    background-size:cover;
+    width: 100%;
     height: 100%;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
 }
-
+input {
+    display: none;
+}
+label{
+    height: 100%;
+    width: 100%;
+}
+.HackYU-container > * {
+    flex: 1;
+}
 #aboutHackYU {
     color: black;
     width: 70%;
@@ -41,8 +51,9 @@ body, html {
     position: absolute;
     text-align: center;
     font-size: xx-large;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Ubuntu', sans-serif;
     transform: translate(-50%, -50%);
+    align-content: space-around;
 
 }
 
@@ -62,10 +73,17 @@ body, html {
     transform-style: preserve-3d;
     display: flex;
 }
+#flip-card-inner:checked + label .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-#aboutHackYU:hover .flip-card-inner {
-    transform: rotateY(180deg);
+label:hover .flip-card-front{
+    -webkit-transform: rotateY(1deg);
+    transform: rotateY(1deg);
+    box-shadow: 20px 0 20px 0 rgba(50,50,50,.2);
+    cursor: pointer;
 }
 .guest:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -85,7 +103,7 @@ body, html {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-size: x-large;
     min-width: 100%;
     height: fit-content;
@@ -104,7 +122,7 @@ body, html {
     align-content: space-around;
     justify-content: space-around;
 }
-#guests, #sponsors{
+#guests, #sponsors, .jumbotron{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
@@ -126,12 +144,12 @@ body, html {
 }
 h1{
     text-align: center;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-size: x-large;
     /*margin: 0;*/
     /*border-bottom-left-radius: 25px;*/
     /*border-bottom-right-radius: 25px;*/
-    margin: 5px 30% 5px 30%;
+    margin: 10px 30% 10px 30%;
     border-radius: 25px;
     border-width: medium;
     border-style: solid;
@@ -146,6 +164,8 @@ h1{
     color: #F11D28;
     background-color: rgba(241, 246, 249, 0.85);
     border-radius: 25px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
 }
 
 /*.flip-card-front:hover{*/
@@ -154,15 +174,20 @@ h1{
 /*}*/
 .signup{
     position: absolute;
-
     text-align: center;
-    height: fit-content;
     border-radius: 10px;
     padding: 13px;
     background-color: rgba(241, 29, 40, 0.8);
     color: white;
-    font-family: 'Indie Flower', cursive;
-    font-size: x-large;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    width: 15%;
+    bottom: 12%;
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .signup:hover{
     color: #F11D28;
@@ -170,14 +195,11 @@ h1{
 }
 
 .YU-signup{
-    /*top: 25%;*/
-    top: 14%;
-    left: 20%;
+    left: 25%;
 }
 
 .nonYU-signup{
-    bottom: 14%;
-    right: 20%;
+    right: 25%;
 }
 
 .sponsor-img{
@@ -188,13 +210,33 @@ h1{
     /*TODO: remove when added guests*/
     display: none;
 }
-/*#picture-1{*/
-/*    background-image:url('../pictures/sample_img_3.jpeg')*/
-/*}*/
+.flip-card-front{
+    font-size: 150%;
+    font-weight: bolder;
+}
+.jumbotron{
+    text-align: justify;
+    font-size: large;
+    color:dimgray;
+    /*background-color: #3E474C;*/
+}
+.jumbo-br{
+    line-height: 150%;
+}
+.rules, .rules > * {
+    margin: 0 0 0.4em;
+}
+.highlight, .rules{
+    color: #F11D28;
+    opacity: 0.75;
+}
 
-/*#picture-2{*/
-/*    background-image:url('../pictures/sample_img_4.jpeg')*/
-/*}*/
+.signups:after{
 
-/*#picture-3{*/
-/*    background-image:url('../pic
+    bottom: 14%;
+    display:table-row;
+    overflow: hidden;
+    content: " ";
+    clear: both;
+
+}

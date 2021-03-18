@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -7,9 +7,12 @@
 
 body, html, .HackYU-container {
     height: 100%;
+    letter-spacing: 1px;
+}
+body > * {
+    font-family: 'Ubuntu', sans-serif;
 }
 body {
-    font-family: 'Indie Flower', cursive;
     /*margin: 0 10% 0 10%;*/
     margin: 0;
     /*padding: 0 20px 0 20px;*/
@@ -24,8 +27,6 @@ h1{
     text-align: center;
     color: #FD3A2D;
     margin-top: 10px;
-    font-family: "Indie Flower", cursive;
-    letter-spacing: 3px;
 }
 #nothing-here{
     /*TODO: change margins schedule added*/

@@ -80,8 +80,8 @@ label{
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 label:hover .flip-card-front{
-    -webkit-transform: rotateY(10deg);
-    transform: rotateY(10deg);
+    -webkit-transform: rotateY(1deg);
+    transform: rotateY(1deg);
     box-shadow: 20px 0 20px 0 rgba(50,50,50,.2);
     cursor: pointer;
 }
@@ -240,4 +240,3 @@ h1{
     clear: both;
 
 }
-

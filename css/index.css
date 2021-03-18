@@ -80,8 +80,8 @@ label{
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 label:hover .flip-card-front{
-    -webkit-transform: rotateY(10deg);
-    transform: rotateY(10deg);
+    -webkit-transform: rotateY(1deg);
+    transform: rotateY(1deg);
     box-shadow: 20px 0 20px 0 rgba(50,50,50,.2);
     cursor: pointer;
 }
@@ -177,12 +177,11 @@ h1{
     text-align: center;
     border-radius: 10px;
     padding: 13px;
-    background-color: rgba(241, 29, 40, 0.8);
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: large;
     width: 15%;
-    bottom: 12%;
+    bottom: 11%;
     height: 17%;
     display: flex;
     justify-content: center;
@@ -196,10 +195,12 @@ h1{
 
 .YU-signup{
     left: 25%;
+    background-color: rgba(241, 29, 40, 0.55);
 }
 
 .nonYU-signup{
     right: 25%;
+    background-color: rgba(241, 29, 40, 0.8);
 }
 
 .sponsor-img{
@@ -240,4 +241,3 @@ h1{
     clear: both;
 
 }
-

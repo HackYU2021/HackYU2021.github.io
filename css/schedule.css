@@ -7,7 +7,6 @@
 
 body, html, .HackYU-container {
     height: 100%;
-    letter-spacing: 1px;
 }
 body > * {
     font-family: 'Ubuntu', sans-serif;

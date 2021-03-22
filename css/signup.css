@@ -10,7 +10,6 @@ body{
 }
 body > *{
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 1px;
 }
 
 .free-text {

@@ -145,7 +145,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
     padding-left: 10px;
 }
@@ -231,7 +231,6 @@ footer {
     text-align: center;
 
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 1px;
     color: rgb(241, 246, 249);
 
     background-color: rgb(243, 74, 82);
@@ -248,7 +247,6 @@ footer {
 
     color: rgb(241, 246, 249);
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 1px;
 
     text-align: center;
 }

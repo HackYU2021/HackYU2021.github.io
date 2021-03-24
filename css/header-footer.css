@@ -123,6 +123,10 @@
     color: white;
 }
 
+.navbar .nav-link:hover {
+    color: #F9A131;
+}
+
 #dropdown-guests {
     /*TODO: remove once we add guests*/
     display: none;

@@ -10,19 +10,27 @@ body{
 }
 body > *{
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 1px;
 }
 
 .free-text {
     font-weight: bold;
 }
 
-.YU{
-    color: #FF872C;
+/*.YU{*/
+/*    color: #F9A131;*/
+/*}*/
+/*.general{*/
+/*    color: #F9A131;*/
+/*}*/
+
+h1{
+    font-size: xx-large;
+    text-align: center;
+    color: #F9A131;
+    /*color: #FFA12C;*/
+    margin-top: 10px;
 }
-.general{
-    color: #FFA12C
-}
+
 .other-signup{
     color: rgba(68, 79, 165, 0.9);
     text-underline: rgba(68, 79, 165, 0.9);

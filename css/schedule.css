@@ -34,7 +34,21 @@ h1{
 }
 table{
     /*TODO: remove when schedule added */
-    display: none;
+    /*display: none;*/
+}
+
+.table td {
+    border-color: #444FA5;
+}
+
+.HackYU-Schedule {
+    margin: auto;
+    width: 299px;
+    border-bottom: solid 1px #444FA5;
+}
+
+.table {
+    margin-bottom: 0;
 }
 
 footer {

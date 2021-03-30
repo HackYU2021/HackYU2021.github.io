@@ -5,6 +5,12 @@
     margin: 0;
 }
 
+body {
+    overflow-x: auto;
+    min-width: 1250px;
+    /*scrollbar;*/
+}
+
 .header-top {
     position: relative;
     display: flex;
@@ -106,7 +112,7 @@
 
     white-space: nowrap;
 
-    min-width: 1036px;
+    min-width: 1250px;
 }
 
 .navbar .nav-link {

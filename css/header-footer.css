@@ -7,7 +7,8 @@
 
 body {
     overflow-x: auto;
-    min-width: 1250px;
+    /*min-width: 1250px;*/
+    min-width: 1100px;
     /*scrollbar;*/
 }
 
@@ -112,7 +113,8 @@ body {
 
     white-space: nowrap;
 
-    min-width: 1250px;
+    /*min-width: 1250px;*/
+    min-width: 1100px;
 }
 
 .navbar .nav-link {

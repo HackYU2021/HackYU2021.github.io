@@ -26,15 +26,50 @@ h1{
     color: #F9A131;
     margin-top: 10px;
 }
-#nothing-here{
-    /*TODO: change margins schedule added*/
-    margin: 13.5% 0 13.5% 0;
+
+h6 {
     text-align: center;
-    font-size: large;
 }
-table{
-    /*TODO: remove when schedule added */
-    display: none;
+
+.table thead th {
+    border-bottom-color: #444FA5;
+    border-top-color: #444FA5;
+    border-top-width: 2px;
+
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.table td {
+    border-bottom: 1px solid;
+    border-color: #444FA5;
+    width: 50px;
+}
+
+.HackYU-Schedule {
+    margin: auto;
+    width: 323px;
+    /*width: 700px;*/
+    /*height: 465px;*/
+
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+}
+
+.schedule-column {
+    border-bottom: 1px #444FA5;
+    height: 455px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+.table {
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    border-bottom-width: 2px;
+    border-bottom-color: #444FA5;
+
+    width: 323px;
 }
 
 footer {

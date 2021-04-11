@@ -113,6 +113,7 @@ label:hover .flip-card-front{
 /* Style the back side */
 .flip-card-back {
     transform: rotateY(180deg);
+    font-size: 28px;
 }
 .main-body, #guests, #sponsors {
     display: flex;
@@ -162,6 +163,7 @@ h1{
 
 .flip-card-inner > *{
     color: #F11D28;
+    font-weight: 500;
     background-color: rgba(241, 246, 249, 0.85);
     border-radius: 25px;
     filter: blur(0px);

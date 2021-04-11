@@ -232,6 +232,7 @@ h1{
 .highlight, .rules{
     color: #F11D28;
     opacity: 0.75;
+    font-weight: bold;
 }
 
 .signups:after{

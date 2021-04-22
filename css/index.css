@@ -160,6 +160,9 @@ h1{
     background-color: #f34a52;
     color: #f1f6f9;
 }
+.company{
+    font-size: smaller;
+}
 
 .flip-card-inner > *{
     color: #F11D28;
@@ -211,7 +214,7 @@ h1{
 }
 #guests{
     /*TODO: remove when added guests*/
-    display: none;
+    /*display: none;*/
 }
 .flip-card-front{
     font-size: 150%;
@@ -228,6 +231,9 @@ h1{
 }
 .rules, .rules > * {
     margin: 0 0 0.4em;
+}
+ol{
+    padding-left: 2em;
 }
 .highlight, .rules{
     color: #F11D28;

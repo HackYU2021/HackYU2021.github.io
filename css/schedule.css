@@ -87,3 +87,12 @@ td:nth-child(2), th:nth-child(2){
     margin-left: 10px;
     font-style: italic;
 }
+
+.star{
+    color: #444FA5;
+    font-size: larger;
+}
+h2{
+    color: #444FA5;
+    text-align: center;
+}

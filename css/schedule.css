@@ -48,7 +48,7 @@ h6 {
 
 .HackYU-Schedule {
     margin: auto;
-    width: 323px;
+    width: fit-content;
     /*width: 700px;*/
     /*height: 465px;*/
 
@@ -69,10 +69,36 @@ h6 {
     border-bottom-width: 2px;
     border-bottom-color: #444FA5;
 
-    width: 323px;
+    width: 600px;
 }
 
 footer {
     position: relative;
     bottom: 0;
+}
+th:first-child, tr:first-child{
+    width: 70%;
+}
+td:nth-child(2), th:nth-child(2){
+   text-align: right;
+}
+
+.workshop-details{
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.star{
+    color: #444FA5;
+    font-size: larger;
+}
+h2{
+    color: #444FA5;
+    text-align: center;
+}
+
+.uber-signup{
+    color: #444FA5;
+    opacity: 80%;
+    text-decoration: underline;
 }
